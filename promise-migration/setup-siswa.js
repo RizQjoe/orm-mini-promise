@@ -1,5 +1,5 @@
 const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('db/database.db');
+const db = new sqlite3.Database('data.db');
 
 db.serialize(() => {
 
@@ -21,7 +21,4 @@ db.serialize(() => {
   `,() => {
     console.log('Seed Table Siswa Berhasil');
   });
-
-
-
 })
